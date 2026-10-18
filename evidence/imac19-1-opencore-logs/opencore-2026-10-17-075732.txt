@@ -1,0 +1,544 @@
+00:000 00:000 BS: Starting OpenCore application...
+00:000 00:000 BS: Booter path - \System\Library\CoreServices\.diagnostics\Drivers\HardwareDrivers\Product.efi
+00:000 00:000 OCFS: Trying to locate filesystem on 6DF2ED18 6AF39A18
+00:000 00:000 OCFS: Filesystem DP - \System\Library\CoreServices\.diagnostics\Drivers\HardwareDrivers\Product.efi
+00:000 00:000 BS: Trying to load OpenCore image...
+00:000 00:000 BS: Relative path - System\Library\CoreServices\.diagnostics\Drivers
+00:000 00:000 BS: Startup path - System\Library\CoreServices\.diagnostics\Drivers\OpenCore.efi (0)
+00:000 00:000 BS: Fallback to absolute path - EFI\OC\OpenCore.efi
+00:000 00:000 BS: Read OpenCore image of 876544 bytes
+00:000 00:000 OCM: Loaded image at 6B4E8018 handle
+00:000 00:000 OCM: Loaded image has DeviceHandle 6DF2ED18 FilePath 6B4E8118 ours DevicePath 6AF39318
+00:000 00:000 OCCPU: TSC Adjust 0
+00:000 00:000 OCCPU: Known Model Core Crystal Clock Frequency    24000000Hz
+00:000 00:000 OCCPU: CPUFrequencyFromART  3600000000Hz  3600MHz = 24000000 * 300 / 2
+00:000 00:000 OC: Starting OpenCore...
+00:000 00:000 OC: Booter path - EFI\OC\OpenCore.efi
+00:000 00:000 OCFS: Trying to locate filesystem on 6DF2ED18 6B4E8118
+00:000 00:000 OCFS: Filesystem DP - EFI\OC\OpenCore.efi
+00:000 00:000 OC: Absolute booter path - EFI\OC\OpenCore.efi
+00:000 00:000 OC: Storage root EFI\OC\OpenCore.efi
+00:000 00:000 OCST: Missing vault data, ignoring...
+00:000 00:000 OC: OcMiscEarlyInit...
+00:000 00:000 OC: Loaded configuration of 29880 bytes
+00:000 00:000 OC: Got 5 drivers
+00:000 00:000 OC: Watchdog status is 1
+00:284 00:284 OC: OpenCore DBG-109-2026-10-17 is loading in Optional mode (0/0)...
+00:454 00:169 OC: Boot timestamp - 2026.10.17 07:57:33
+00:628 00:174 OCCPU: MP services threads 16 (enabled 16) - Success
+00:813 00:184 OCCPU: MP services Pkg 1 Cores 8 Threads 2 - Success
+00:978 00:165 OCCPU: Found Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+01:145 00:167 OCCPU: Signature 906EC Stepping C Model 9E Family 6 Type 0 ExtModel 9 ExtFamily 0 uCode F8 CPUID MAX (16/80000008)
+01:414 00:269 OCCPU: EIST CFG Lock 0
+01:596 00:181 OCCPU: TSC Adjust 0
+01:772 00:175 OCCPU: Known Model Core Crystal Clock Frequency    24000000Hz
+01:950 00:178 OCCPU: CPUFrequencyFromART  3600000000Hz  3600MHz = 24000000 * 300 / 2
+02:117 00:166 OCCPU: Timer address is 0 from Unknown INTEL
+02:304 00:187 OCCPU: Intel TSC:  3600000000Hz,  3600MHz; FSB:   100000000Hz,   100MHz; MaxBusRatio: 36
+02:524 00:220 OCCPU: Detected Apple Processor Type: 10 -> 1009
+02:697 00:172 OCCPU: CPUFrequencyFromTSC           0Hz     0MHz
+02:861 00:164 OCCPU: CPUFrequencyFromApple 57600000000Hz 57600MHz
+03:028 00:166 OCCPU: CPUFrequency  3600000000Hz  3600MHz
+03:196 00:168 OCCPU: FSBFrequency   100000000Hz   100MHz
+03:359 00:163 OCCPU: Pkg 1 Cores 8 Threads 16
+03:536 00:176 OC: OcLoadNvramSupport...
+03:713 00:176 OCVAR: Locate emulated NVRAM protocol - Not Found
+03:879 00:165 OC: Deleting NVRAM <UUID-1>:DefaultBackgroundColor - Not Found
+04:094 00:215 OC: Not deleting NVRAM <UUID-2>:OCLP-Version, matches add
+04:313 00:219 OC: Not deleting NVRAM <UUID-2>:OCLP-Model, matches add
+04:531 00:217 OC: Not deleting NVRAM <UUID-2>:OCLP-Settings, matches add
+04:737 00:206 OC: Deleting NVRAM <UUID-2>:OCLP-Spoofed-SN - Not Found
+04:949 00:211 OC: Deleting NVRAM <UUID-2>:OCLP-Spoofed-MLB - Not Found
+05:164 00:215 OC: Deleting NVRAM <UUID-2>:revcpu - Not Found
+05:347 00:182 OC: Deleting NVRAM <UUID-2>:revcpuname - Not Found
+05:507 00:159 OC: Deleting NVRAM <UUID-2>:revblock - Not Found
+05:668 00:161 OC: Not deleting NVRAM <UUID-2>:revpatch, matches add
+05:888 00:219 OC: Not deleting NVRAM <UUID-3>:boot-args, matches add
+06:105 00:217 OC: Not deleting NVRAM <UUID-3>:csr-active-config, matches add
+06:329 00:224 OCVAR: Setting NVRAM <UUID-1>:DefaultBackgroundColor - Success
+06:544 00:214 OCVAR: Setting NVRAM <UUID-2>:OCLP-Model - ignored, exists
+06:761 00:216 OCVAR: Setting NVRAM <UUID-2>:OCLP-Settings - ignored, exists
+06:978 00:217 OCVAR: Setting NVRAM <UUID-2>:OCLP-Version - ignored, exists
+07:202 00:223 OCVAR: Setting NVRAM <UUID-2>:revpatch - ignored, exists
+07:432 00:230 OCVAR: Setting NVRAM <UUID-3>:boot-args - ignored, exists
+07:639 00:207 OCVAR: Setting NVRAM <UUID-3>:csr-active-config - ignored, exists
+07:866 00:226 OC: Current version is DBG-109-2026-10-17
+08:039 00:173 OC: OcMiscMiddleInit...
+08:219 00:179 OC: Setting NVRAM <UUID-2>:boot-path = PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(1,GPT,<UUID-31>,0x28,0x64000)/EFI\OC\OpenCore.efi - Success
+08:489 00:270 OC: StorageHandle 6DF2ED18 with Disabled LauncherOption pointing to \boot.efi
+08:742 00:253 OC: Launcher EFI\OC\OpenCore.efi signature is 0B158F9D
+08:924 00:182 OC: OcLoadUefiSupport...
+09:098 00:173 OCAU: OcAudioInstallProtocols (0, 0)
+09:314 00:216 OCAU: <UUID-5> protocol - Not Found
+09:489 00:174 OCAU: <UUID-6> protocol - Not Found
+09:667 00:177 OCAU: <UUID-7> protocol - Not Found
+09:834 00:167 OCAU: <UUID-8> protocol - Success
+10:002 00:167 OC: Disabling audio in favour of firmware implementation
+10:178 00:176 OCAE: Builtin installed
+10:335 00:157 OC: Loading Apple Secure Boot with Disabled (level 0)
+10:505 00:170 OCII: AIFTimerBoostInit Current timer is 2500
+10:676 00:170 OCABC: ALRBL 0 RTDFRG 0 DEVMMIO 0 NOSU 0 NOVRWR 0 NOSB 1 FBSIG 1 NOHBMAP 0 SMSLIDE 0 WRUNPROT 0 CLRTS 0
+10:889 00:213 OCABC: FEXITBS 0 PRMRG 0 CSLIDE 0 MSLIDE 0 PRSRV 0 RBMAP 0 VMAP 0 APPLOS 0 RTPERMS 0 ARBAR -1 RBIO 0
+11:106 00:216 OCABC: Firmware has 4091642 free pages (429818 in lower 4 GB)
+11:271 00:164 OCABC: Awaiting rendezvous with OpenRuntime r12
+11:445 00:173 OC: RequestBootVarRouting 1
+11:613 00:168 OCDM: Found 0x20028/0x20046 UEFI version (376 bytes, 0 rebuilding to 376) gST 7AD7EF18 gBS 67E5FF38 gBS->CreateEventEx 67E4DD77 &gBS 67316318
+11:849 00:236 OC: AVX enabled - 1
+12:022 00:173 OC: Got 5 drivers
+12:192 00:169 OC: Driver OpenRuntime.efi at 0 () is being loaded...
+12:388 00:196 OCABC: EfiBootRt candidate - <nil>
+12:562 00:174 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+12:726 00:163 OCB: Arch filtering 0(32768)->6AE77018(32768) caps 0 - Success
+12:888 00:162 OCABC: Got rendezvous with OpenRuntime r12
+13:054 00:165 OCABC: MAT support is 0
+13:227 00:173 OC: Driver OpenRuntime.efi at 0 is successfully loaded!
+13:411 00:184 OC: Driver OpenCanopy.efi at 1 () is being loaded...
+13:589 00:178 OCABC: EfiBootRt candidate - <nil>
+13:758 00:169 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+13:920 00:161 OCB: Arch filtering 0(151552)->6A4C6018(151552) caps 0 - Success
+14:101 00:181 OCCPU: TSC Adjust 0
+15:883 01:781 OCCPU: Known Model Core Crystal Clock Frequency    24000000Hz
+17:431 01:548 OCCPU: CPUFrequencyFromART  3600000000Hz  3600MHz = 24000000 * 300 / 2
+17:722 00:291 OCUI: Registered custom GUI protocol
+17:896 00:173 OC: Driver OpenCanopy.efi at 1 is successfully loaded!
+18:067 00:171 OC: Driver apfs_aligned.efi at 2 () is being loaded...
+18:312 00:245 OCABC: EfiBootRt candidate - <nil>
+18:470 00:158 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+18:643 00:172 OCB: Arch filtering 0(718340)->6A43C018(718340) caps 0 - Success
+18:806 00:163 OC: Driver apfs_aligned.efi at 2 is successfully loaded!
+18:978 00:171 OC: Driver apfs_aligned.efi at 2 needs connection.
+19:138 00:159 OC: Driver OpenLinuxBoot.efi at 3 () is being loaded...
+19:321 00:182 OCABC: EfiBootRt candidate - <nil>
+19:477 00:155 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+19:644 00:167 OCB: Arch filtering 0(102400)->6ADBE018(102400) caps 0 - Success
+19:811 00:166 OCCPU: TSC Adjust 0
+19:986 00:175 OCCPU: Known Model Core Crystal Clock Frequency    24000000Hz
+20:142 00:156 OCCPU: CPUFrequencyFromART  3600000000Hz  3600MHz = 24000000 * 300 / 2
+20:322 00:179 OC: Driver OpenLinuxBoot.efi at 3 is successfully loaded!
+20:490 00:168 OC: Driver ResetNvramEntry.efi at 4 () is being loaded...
+20:654 00:163 OCABC: EfiBootRt candidate - <nil>
+20:838 00:183 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+20:998 00:160 OCB: Arch filtering 0(57344)->6AE56018(57344) caps 0 - Success
+21:172 00:173 OCCPU: TSC Adjust 0
+21:337 00:165 OCCPU: Known Model Core Crystal Clock Frequency    24000000Hz
+21:497 00:160 OCCPU: CPUFrequencyFromART  3600000000Hz  3600MHz = 24000000 * 300 / 2
+21:668 00:171 OC: Driver ResetNvramEntry.efi at 4 is successfully loaded!
+21:832 00:163 OC: Connecting drivers...
+24:496 02:663 OC: Connecting drivers done...
+24:654 00:157 OC: Found 4 pointer devices - Success
+24:830 00:176 OCC: GOP exists on ConsoleOutHandle and has 1 modes
+25:048 00:218 OC: Requested resolution is 0x0@0 (max: 1, force: 0) from Max
+25:222 00:173 OCC: Requesting 0x0@0 (max: 1) resolution, curr 0, total 1
+25:391 00:168 OCC: Current FB at 0xA0300000 (0x3840000), format 1, res 5120x2880 scan 5120
+25:572 00:180 OCC: Mode 0 - 5120x2880:1
+25:731 00:159 OCC: Current mode matches desired mode 0
+25:898 00:166 OC: Changed resolution to 0x0@0 (max: 1, force: 0) from Max - Already started
+26:063 00:165 OCC: Using builtin text renderer with 2 scale
+26:233 00:169 OCC: Install console control (67303E38/67E3DF10/0), current - Success
+26:588 00:355 OCC: Setup ASCII Output - Success
+26:712 00:124 OC: Requested console mode is 0x0 (max: 0) from 
+26:848 00:135 OC: Requested not to use audio
+26:976 00:127 OC: OcMiscLoadSystemReport...
+27:104 00:128 OC: OcLoadAcpiSupport...
+27:224 00:119 OCA: Found ACPI RSDT table 7AFFD0A4 from RSDP 7AFFE014
+27:355 00:131 OCA: Found ACPI XSDT table 7AFFD148
+27:487 00:131 OCA: Found 21 ACPI tables
+27:608 00:120 OCA: Detected table FACP (50434146) (OEM 003030656C707041) at 7AFF0000 of 244 bytes at index 0
+27:731 00:122 OCA: Detected DSDT at 7AFE4000 of 30355 bytes at index 0
+27:854 00:123 OCA: Detected table SSDT (54445353) (OEM 0074734930757043) at 7AFFC000 of 1739 bytes at index 1
+27:989 00:135 OCA: Detected table SSDT (54445353) (OEM 0000007473497041) at 7AFFB000 of 1532 bytes at index 2
+28:110 00:120 OCA: Detected table SSDT (54445353) (OEM 0074734330757043) at 7AFFA000 of 880 bytes at index 3
+28:230 00:120 OCA: Detected table SSDT (54445353) (OEM 0000007473437041) at 7AFF9000 of 586 bytes at index 4
+28:360 00:129 OCA: Detected table SSDT (54445353) (OEM 0074647353757043) at 7AFF7000 of 7117 bytes at index 5
+28:482 00:122 OCA: Detected table SSDT (54445353) (OEM 0020746473536153) at 7AFF3000 of 12742 bytes at index 6
+28:600 00:117 OCA: Detected table ECDT (54444345) (OEM 003030656C707041) at 7AFF2000 of 83 bytes at index 7
+28:719 00:119 OCA: Detected table HPET (54455048) (OEM 003030656C707041) at 7AFEF000 of 56 bytes at index 8
+28:854 00:134 OCA: Detected table APIC (43495041) (OEM 003030656C707041) at 7AFEE000 of 300 bytes at index 9
+28:973 00:119 OCA: Detected table SBST (54534253) (OEM 003030656C707041) at 7AFEC000 of 48 bytes at index 10
+29:105 00:131 OCA: Detected table SSDT (54445353) (OEM 0000000000000000) at 7AFE3000 of 36 bytes at index 11
+29:233 00:127 OCA: Detected table SSDT (54445353) (OEM 0000335374647353) at 7AFDE000 of 49 bytes at index 12
+29:354 00:121 OCA: Detected table SSDT (54445353) (OEM 6963684161746153) at 7AFDD000 of 678 bytes at index 13
+29:480 00:126 OCA: Detected table SSDT (54445353) (OEM 0000000063786453) at 7AFDC000 of 184 bytes at index 14
+29:600 00:120 OCA: Detected table SSDT (54445353) (OEM 4843506E4F746254) at 7AFD7000 of 18450 bytes at index 15
+29:719 00:118 OCA: Detected table SSDT (54445353) (OEM 0000000069636858) at 7AFD3000 of 3270 bytes at index 16
+29:851 00:132 OCA: Detected table DMAR (52414D44) (OEM 20202020324B4445) at 7AFD2000 of 136 bytes at index 17
+29:983 00:131 OCA: Detected table MCFG (4746434D) (OEM 003030656C707041) at 7AFED000 of 60 bytes at index 18
+30:109 00:126 OCA: Detected table NHLT (544C484E) (OEM 20202020324B4445) at 7AFD1000 of 45 bytes at index 19
+30:217 00:108 OCA: Detected table VFCT (54434656) (OEM 003030656C707041) at 7AFCA000 of 25732 bytes at index 20
+30:393 00:175 OCA: FACS signature is 0 (0)
+30:522 00:128 OCA: Exposing XSDT table table FACP (50434146) (OEM 003030656C707041) at 7AFF0000 of 244 bytes at index 0
+30:637 00:114 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0074734930757043) at 7AFFC000 of 1739 bytes at index 1
+30:755 00:117 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000007473497041) at 7AFFB000 of 1532 bytes at index 2
+30:871 00:115 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0074734330757043) at 7AFFA000 of 880 bytes at index 3
+31:016 00:144 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000007473437041) at 7AFF9000 of 586 bytes at index 4
+31:141 00:125 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0074647353757043) at 7AFF7000 of 7117 bytes at index 5
+31:269 00:128 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0020746473536153) at 7AFF3000 of 12742 bytes at index 6
+31:398 00:128 OCA: Exposing XSDT table table ECDT (54444345) (OEM 003030656C707041) at 7AFF2000 of 83 bytes at index 7
+31:521 00:122 OCA: Exposing XSDT table table HPET (54455048) (OEM 003030656C707041) at 7AFEF000 of 56 bytes at index 8
+31:632 00:110 OCA: Exposing XSDT table table APIC (43495041) (OEM 003030656C707041) at 7AFEE000 of 300 bytes at index 9
+31:752 00:120 OCA: Exposing XSDT table table SBST (54534253) (OEM 003030656C707041) at 7AFEC000 of 48 bytes at index 10
+31:879 00:126 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000000000000000) at 7AFE3000 of 36 bytes at index 11
+32:003 00:123 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000335374647353) at 7AFDE000 of 49 bytes at index 12
+32:132 00:129 OCA: Exposing XSDT table table SSDT (54445353) (OEM 6963684161746153) at 7AFDD000 of 678 bytes at index 13
+32:255 00:122 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000000063786453) at 7AFDC000 of 184 bytes at index 14
+32:369 00:114 OCA: Exposing XSDT table table SSDT (54445353) (OEM 4843506E4F746254) at 7AFD7000 of 18450 bytes at index 15
+32:488 00:119 OCA: Exposing XSDT table table SSDT (54445353) (OEM 0000000069636858) at 7AFD3000 of 3270 bytes at index 16
+32:608 00:119 OCA: Exposing XSDT table table DMAR (52414D44) (OEM 20202020324B4445) at 7AFD2000 of 136 bytes at index 17
+32:735 00:127 OCA: Exposing XSDT table table MCFG (4746434D) (OEM 003030656C707041) at 7AFED000 of 60 bytes at index 18
+32:856 00:121 OCA: Exposing XSDT table table NHLT (544C484E) (OEM 20202020324B4445) at 7AFD1000 of 45 bytes at index 19
+33:039 00:183 OCA: Exposing XSDT table table VFCT (54434656) (OEM 003030656C707041) at 7AFCA000 of 25732 bytes at index 20
+33:168 00:128 OCA: Exposing RSDT table table FACP (50434146) (OEM 003030656C707041) at 7AFF0000 of 244 bytes at index 0
+33:288 00:120 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0074734930757043) at 7AFFC000 of 1739 bytes at index 1
+33:406 00:118 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000007473497041) at 7AFFB000 of 1532 bytes at index 2
+33:538 00:132 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0074734330757043) at 7AFFA000 of 880 bytes at index 3
+33:663 00:124 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000007473437041) at 7AFF9000 of 586 bytes at index 4
+33:792 00:128 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0074647353757043) at 7AFF7000 of 7117 bytes at index 5
+33:913 00:121 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0020746473536153) at 7AFF3000 of 12742 bytes at index 6
+34:020 00:107 OCA: Exposing RSDT table table ECDT (54444345) (OEM 003030656C707041) at 7AFF2000 of 83 bytes at index 7
+34:138 00:117 OCA: Exposing RSDT table table HPET (54455048) (OEM 003030656C707041) at 7AFEF000 of 56 bytes at index 8
+34:258 00:120 OCA: Exposing RSDT table table APIC (43495041) (OEM 003030656C707041) at 7AFEE000 of 300 bytes at index 9
+34:386 00:128 OCA: Exposing RSDT table table SBST (54534253) (OEM 003030656C707041) at 7AFEC000 of 48 bytes at index 10
+34:504 00:117 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000000000000000) at 7AFE3000 of 36 bytes at index 11
+34:618 00:114 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000335374647353) at 7AFDE000 of 49 bytes at index 12
+34:739 00:120 OCA: Exposing RSDT table table SSDT (54445353) (OEM 6963684161746153) at 7AFDD000 of 678 bytes at index 13
+34:861 00:122 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000000063786453) at 7AFDC000 of 184 bytes at index 14
+34:985 00:123 OCA: Exposing RSDT table table SSDT (54445353) (OEM 4843506E4F746254) at 7AFD7000 of 18450 bytes at index 15
+35:105 00:120 OCA: Exposing RSDT table table SSDT (54445353) (OEM 0000000069636858) at 7AFD3000 of 3270 bytes at index 16
+35:224 00:118 OCA: Exposing RSDT table table DMAR (52414D44) (OEM 20202020324B4445) at 7AFD2000 of 136 bytes at index 17
+35:366 00:141 OCA: Exposing RSDT table table MCFG (4746434D) (OEM 003030656C707041) at 7AFED000 of 60 bytes at index 18
+35:491 00:125 OCA: Exposing RSDT table table NHLT (544C484E) (OEM 20202020324B4445) at 7AFD1000 of 45 bytes at index 19
+35:618 00:127 OCA: Exposing RSDT table table VFCT (54434656) (OEM 003030656C707041) at 7AFCA000 of 25732 bytes at index 20
+35:754 00:136 OC: OcLoadPlatformSupport...
+35:882 00:127 OCSMB: Found DMI Anchor 7AECF000 v3.3 Table Address 7AECE000 Length 0B5F
+36:020 00:138 OCSMB: Found DMI Anchor 7AECD000 v3.3 Table Address 7AECC000 Length 0B5F
+36:142 00:121 OCSMB: Current SMBIOS iMac19,1 (Mac-AA95B1DDAB278B95 made by Apple Inc.)
+36:264 00:122 OC: PlatformInfo auto 0 OEM SN 0 OEM UUID 0 OEM MLB 0 OEM ROM 0 - Success
+36:388 00:124 OC: OcLoadDevPropsSupport...
+36:515 00:126 OC: OcMiscLateInit...
+36:635 00:120 OC: Translated HibernateMode Auto to 3
+36:752 00:116 OCB: boot-image is 0 bytes - Not Found
+36:878 00:125 OCB: RTC hibernation is 0
+36:997 00:119 OCB: NVRAM hibernation is 0 / Not Found / 0
+37:124 00:126 OC: Hibernation activation - Not Found, hibernation wake - no
+37:249 00:124 OC: Panic log does not exist
+37:373 00:124 OC: OcLoadKernelSupport...
+37:497 00:123 OC: All green, starting boot management...
+37:630 00:133 OC: Handing off to external boot controller
+37:755 00:124 OC: Ready for takeoff in 0 us
+38:073 00:317 OCUI: Failed to load image (1/1) Resources\Image\Acidanthera\GoldenGate\Background.icns prefix:Acidanthera\GoldenGate icon:0 - Not Found
+38:337 00:263 OCUI: Failed to load image (1/2) Resources\Image\Acidanthera\GoldenGate\Apple.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+38:640 00:303 OCUI: Failed to load image (2/2) Resources\Image\Acidanthera\GoldenGate\ExtWindows.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+38:881 00:241 OCUI: Failed to load image (1/2) Resources\Image\Acidanthera\GoldenGate\OpticalDrive.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+39:107 00:225 OCUI: Failed to load image (1/2) Resources\Image\Acidanthera\GoldenGate\Other.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+39:330 00:222 OCUI: Failed to load image (2/2) Resources\Image\Acidanthera\GoldenGate\ExtTool.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+39:552 00:222 OCUI: Failed to load image (1/2) Resources\Image\Acidanthera\GoldenGate\ResetNVRAM.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+39:785 00:232 OCUI: Failed to load image (2/2) Resources\Image\Acidanthera\GoldenGate\ExtShell.icns prefix:Acidanthera\GoldenGate icon:1 - Not Found
+40:084 00:298 OCUI: Info->fontSize 20 Info->bitField 192 Info->charSet 0 Info->stretchH 100 Info->aa 1
+40:310 00:226 OCUI: Info->paddingUp 0 Info->paddingRight 0 Info->paddingDown 0 Info->paddingLeft 0
+40:535 00:224 OCUI: Info->spacingHoriz 1 Info->spacingVert 1 Info->outline 0 Info->fontName 
+40:759 00:223 OCB: Adding fs 78B9C298 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(1,GPT,<UUID-4>,0x6,0x12C00)
+41:036 00:277 OCB: Adding fs 78B4F098 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-1>)
+41:369 00:332 OCB: Adding fs 78A3FB98 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-2>)
+41:712 00:342 OCB: Adding fs 78A3F618 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-3>)
+42:049 00:337 OCB: Adding fs 78A3F098 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-4>)
+42:383 00:333 OCB: Adding fs 6CE03B18 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-5>)
+42:725 00:342 OCB: Adding fs 6CE03598 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-6>)
+43:053 00:327 OCB: Adding fs 78B92D98 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(3,GPT,<UUID-11>,0x3527834,0x5174D6)
+43:960 00:906 OCB: Adding fs 6CDCFB98 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)
+45:664 01:703 OCB: Adding fs 6CDCF698 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-12>)
+46:775 01:111 OCB: Adding fs 6CDCF118 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-9>)
+47:110 00:335 OCB: Adding fs 6C33FA18 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-13>)
+47:443 00:332 OCB: Adding fs 6C33F498 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-10>)
+47:778 00:335 OCB: Adding fs 6C30AF18 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-14>)
+48:107 00:328 OCB: Adding fs 78B92998 (E:0|L:0|P:Success) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(5,GPT,<UUID-13>,0x7041FEB,0x430E24)
+48:442 00:335 OCB: Adding fs 6DF2ED18 (E:1|L:1|P:Success) - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(1,GPT,<UUID-31>,0x28,0x64000)
+48:775 00:332 OCB: Adding fs 6AF17B98 (E:1|L:0|P:Success) - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(2,GPT,<UUID-32>,0x64028,0x7234FB0)/VenMedia(<UUID-10>,<GUID32-15>)
+49:118 00:343 OCB: Adding fs 6AF17698 (E:1|L:0|P:Success) - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(2,GPT,<UUID-32>,0x64028,0x7234FB0)/VenMedia(<UUID-10>,<GUID32-16>)
+49:460 00:342 OCB: Found 18 potentially bootable filesystems
+49:792 00:331 OCB: Found 1 BootOrder entries with BootNext excluded
+50:116 00:323 OCB: efi-boot-device-data = PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+50:692 00:576 OCB: efi-boot-next-data - Not Found
+51:031 00:338 OCB: efi-backup-boot-device-data - Not Found
+51:383 00:351 OCB: efi-apple-recovery-data - Not Found
+51:725 00:341 OCB: Dumping BootOrder
+52:076 00:350 OCB: 0 -> Boot0080 = PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+52:639 00:563 OCB: Parsing predefined list...
+52:979 00:340 OCB: 0 -> Boot0080 = PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+53:544 00:564 OCB: 1 -> Boot0081 = PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+54:128 00:584 OCB: Adding fs 2007C5F5 for 2 custom entries and BEP (aux hidden)
+54:466 00:337 OCB: Building entry from Boot0080
+54:805 00:339 OCB: Assuming DP is full-form or lacks suffix
+55:148 00:343 OCB: Expanded DP - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+55:738 00:590 OCB: Expanded DP remainder - \<UUID-33>\System\Library\CoreServices\boot.efi
+56:083 00:344 OCB: Matched fs 6CDCFB98
+56:423 00:339 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+56:986 00:563 OCB: Get visibility for boot entry <UUID-33>\ - Not Found
+57:342 00:356 OCB: Registering entry Apple SSD [Apple26:Apple] (T:2|F:0|G:0|E:0|B:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+57:911 00:568 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)
+58:258 00:347 OCBP: APFS Volume Info - 7A4CFD98 (131072, <UUID-22>, 16)
+58:598 00:339 OCBP: APFS Container Info - 7A4CFD18 (1, <UUID-23>)
+58:944 00:345 OCBP: BlessedFileHEX (1/5 276) - 02 01 0C 00 D0 41 03 0A 00 00 00 00 01 01 06 00 00 1B 01 01 06 00 00 00 03 16 10 00 01 00 00 00 00 25 38 90 A8 54 86 21 04 01 2A 00 04 00 00 00 0A 6D A4 03 00 00 00 00 E1 B2 5F 03 00 00 00 00
+59:297 00:352 OCBP: BlessedFileHEX (2/5 276) - 16 EF BE 54 BC EF 13 4B B1 C7 F8 F9 2B D5 B4 C7 02 02 04 03 24 00 F7 FC 74 BE 7C 0B F3 49 91 47 01 F4 04 2E 68 42 01 D5 55 D8 03 49 A8 4B 98 35 BE 6C 2E 43 B3 DB 04 04 9A 00 5C 00 43 00 43 00
+59:640 00:343 OCBP: BlessedFileHEX (3/5 276) - 42 00 45 00 33 00 44 00 38 00 38 00 2D 00 46 00 34 00 41 00 36 00 2D 00 34 00 31 00 33 00 36 00 2D 00 39 00 37 00 44 00 45 00 2D 00 41 00 39 00 31 00 34 00 31 00 41 00 41 00 31 00 42 00 34 00
+59:977 00:336 OCBP: BlessedFileHEX (4/5 276) - 43 00 45 00 5C 00 53 00 79 00 73 00 74 00 65 00 6D 00 5C 00 4C 00 69 00 62 00 72 00 61 00 72 00 79 00 5C 00 43 00 6F 00 72 00 65 00 53 00 65 00 72 00 76 00 69 00 63 00 65 00 73 00 5C 00 62 00
+60:317 00:339 OCBP: BlessedFileHEX (5/5 276) - 6F 00 6F 00 74 00 2E 00 65 00 66 00 69 00 00 00 7F FF 04 00
+60:671 00:353 OCBP: BlessedFileDP - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+61:246 00:575 OCBP: Blessed file is valid
+61:594 00:348 OCBP: 18 filesystems for APFS - Success
+61:940 00:345 OCBP: APFS Volume Info - 7A4CF818 (131072, <UUID-15>, 16)
+62:285 00:345 OCBP: APFS Container Info - 7A4CF898 (1, <UUID-16>)
+62:627 00:341 OCBP: APFS match container <UUID-16> vs <UUID-23> for 2 of 18 - 0
+62:972 00:345 OCBP: APFS Volume Info - 7A4CF898 (131072, <UUID-17>, 64)
+63:315 00:343 OCBP: APFS Container Info - 7A4CF918 (1, <UUID-16>)
+63:662 00:346 OCBP: APFS match container <UUID-16> vs <UUID-23> for 3 of 18 - 0
+64:004 00:342 OCBP: APFS Volume Info - 7A4CF918 (131072, <UUID-18>, 4)
+64:359 00:354 OCBP: APFS Container Info - 7A4CFC18 (1, <UUID-16>)
+64:705 00:346 OCBP: APFS match container <UUID-16> vs <UUID-23> for 4 of 18 - 0
+65:050 00:345 OCBP: APFS Volume Info - 7A4CFC18 (131072, <UUID-19>, 1)
+65:385 00:335 OCBP: APFS Container Info - 7A4CF998 (1, <UUID-16>)
+65:723 00:338 OCBP: APFS match container <UUID-16> vs <UUID-23> for 5 of 18 - 0
+66:070 00:347 OCBP: APFS Volume Info - 7A4CF998 (131072, <UUID-20>, 8)
+66:418 00:347 OCBP: APFS Container Info - 7A4CFA18 (1, <UUID-16>)
+66:769 00:351 OCBP: APFS match container <UUID-16> vs <UUID-23> for 6 of 18 - 0
+67:107 00:337 OCBP: APFS Volume Info - 7A4CF998 (131072, <UUID-21>, 192)
+67:502 00:395 OCBP: APFS Container Info - 7A4CFA18 (1, <UUID-16>)
+67:844 00:341 OCBP: APFS match container <UUID-16> vs <UUID-23> for 7 of 18 - 0
+68:242 00:398 OCBP: APFS Volume Info - 7A4CFA18 (131072, <UUID-22>, 16)
+68:582 00:339 OCBP: APFS Container Info - 7A4CFA98 (1, <UUID-23>)
+68:933 00:351 OCBP: APFS match container <UUID-23> vs <UUID-23> for 9 of 18 - 1
+69:272 00:339 OCBP: Missing partition <UUID-22> on preboot - Not Found
+69:616 00:344 OCBP: No APFS booter 9 of 18 for <UUID-22> - Not Found
+69:944 00:327 OCBP: APFS Volume Info - 7A4CFA98 (131072, <UUID-33>, 64)
+70:290 00:345 OCBP: APFS Container Info - 7A4CFB18 (1, <UUID-23>)
+70:641 00:351 OCBP: APFS match container <UUID-23> vs <UUID-23> for 10 of 18 - 1
+70:986 00:344 OCBP: Found partition <UUID-33> on preboot
+71:342 00:355 OCBP: Want predefined list for APFS 16 at <UUID-33>
+71:690 00:348 OCBP: Predefined <UUID-33> \System\Library\CoreServices\boot.efi was found
+72:021 00:330 OCBP: Found APFS booter 10 of 18 for <UUID-33> (67E3DB20)
+72:368 00:347 OCBP: APFS Volume Info - 7A4CFB18 (131072, <UUID-25>, 4)
+72:701 00:332 OCBP: APFS Container Info - 7A4CFB98 (1, <UUID-23>)
+73:044 00:343 OCBP: APFS match container <UUID-23> vs <UUID-23> for 11 of 18 - 1
+73:394 00:349 OCBP: Missing partition <UUID-25> on preboot - Not Found
+73:731 00:337 OCBP: No APFS booter 11 of 18 for <UUID-25> - Not Found
+74:080 00:349 OCBP: APFS Volume Info - 7A4CFB98 (131072, <UUID-34>, 1)
+74:434 00:353 OCBP: APFS Container Info - 7A4CFF98 (1, <UUID-23>)
+74:777 00:342 OCBP: APFS match container <UUID-23> vs <UUID-23> for 12 of 18 - 1
+75:124 00:347 OCBP: Missing partition <UUID-34> on preboot - Not Found
+75:473 00:348 OCBP: No APFS booter 12 of 18 for <UUID-34> - Not Found
+75:830 00:356 OCBP: APFS Volume Info - 7A4CFF98 (131072, <UUID-26>, 192)
+76:173 00:343 OCBP: APFS Container Info - 7A4CFC98 (1, <UUID-23>)
+76:522 00:349 OCBP: APFS match container <UUID-23> vs <UUID-23> for 13 of 18 - 1
+76:865 00:342 OCBP: Missing partition <UUID-26> on preboot - Not Found
+77:217 00:351 OCBP: No APFS booter 13 of 18 for <UUID-26> - Not Found
+77:559 00:342 OCBP: APFS Volume Info - 7A4CFC98 (131072, <UUID-35>, 8)
+77:902 00:342 OCBP: APFS Container Info - 7A4CFF18 (1, <UUID-23>)
+78:253 00:351 OCBP: APFS match container <UUID-23> vs <UUID-23> for 14 of 18 - 1
+78:600 00:347 OCBP: Missing partition <UUID-35> on preboot - Not Found
+78:949 00:348 OCBP: No APFS booter 14 of 18 for <UUID-35> - Not Found
+79:293 00:343 OCBP: APFS Volume Info - 7A4CF698 (131072, <UUID-36>, 192)
+79:647 00:354 OCBP: APFS Container Info - 7A4CF618 (1, <UUID-37>)
+79:990 00:342 OCBP: APFS match container <UUID-37> vs <UUID-23> for 17 of 18 - 0
+80:337 00:346 OCBP: APFS Volume Info - 7A4CF598 (131072, <UUID-38>, 0)
+80:687 00:350 OCBP: APFS Container Info - 7A4CF518 (1, <UUID-37>)
+81:029 00:342 OCBP: APFS match container <UUID-37> vs <UUID-23> for 18 of 18 - 0
+81:372 00:342 OCBP: APFS bless for <UUID-23>:<null string> is Success
+81:714 00:342 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+82:297 00:582 OCB: Get visibility for boot entry <UUID-33>\ - Not Found
+82:631 00:334 OCB: Discarding already present DP
+82:986 00:354 OCB: Processing blessed list
+83:334 00:347 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(1,GPT,<UUID-4>,0x6,0x12C00)
+83:692 00:358 OCBP: Blessed file is missing
+84:042 00:350 OCBP: Blessed folder is missing
+84:404 00:361 OCBP: Predefined <nil> \System\Library\CoreServices\boot.efi was found
+84:743 00:339 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(1,GPT,<UUID-4>,0x6,0x12C00)/\System\Library\CoreServices\boot.efi
+85:099 00:355 OCB: Get visibility for boot entry - Success
+85:435 00:336 OCB: Discarding disabled entry by visibility
+85:796 00:360 LNX: TypeGUID: <UUID-14> (ESP) PARTUUID: <UUID-4>
+86:146 00:350 LNX: ScanLoaderEntries \ - Not Found
+86:499 00:352 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-1>)
+86:850 00:351 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-15>, 16)
+87:188 00:337 OCBP: APFS Container Info - 7A4CF418 (1, <UUID-16>)
+87:526 00:338 OCBP: BlessedFileHEX (1/5 276) - 02 01 0C 00 D0 41 03 0A 00 00 00 00 01 01 06 00 00 1B 01 01 06 00 00 00 03 16 10 00 01 00 00 00 00 25 38 90 A8 54 86 21 04 01 2A 00 02 00 00 00 06 2C 01 00 00 00 00 00 2E 4C 51 03 00 00 00 00
+87:869 00:343 OCBP: BlessedFileHEX (2/5 276) - 5B 1E 65 D0 06 D0 1A 48 B3 4F 95 8F B0 02 43 AC 02 02 04 03 24 00 F7 FC 74 BE 7C 0B F3 49 91 47 01 F4 04 2E 68 42 E8 93 E0 C0 57 53 8F 42 93 CD 2F 7F E9 79 2E 77 04 04 9A 00 5C 00 46 00 41 00
+88:224 00:354 OCBP: BlessedFileHEX (3/5 276) - 36 00 38 00 34 00 42 00 42 00 33 00 2D 00 35 00 30 00 33 00 31 00 2D 00 34 00 35 00 46 00 41 00 2D 00 39 00 39 00 43 00 31 00 2D 00 30 00 32 00 33 00 38 00 41 00 33 00 42 00 36 00 45 00 45 00
+88:622 00:397 OCBP: BlessedFileHEX (4/5 276) - 37 00 33 00 5C 00 53 00 79 00 73 00 74 00 65 00 6D 00 5C 00 4C 00 69 00 62 00 72 00 61 00 72 00 79 00 5C 00 43 00 6F 00 72 00 65 00 53 00 65 00 72 00 76 00 69 00 63 00 65 00 73 00 5C 00 62 00
+88:976 00:354 OCBP: BlessedFileHEX (5/5 276) - 6F 00 6F 00 74 00 2E 00 65 00 66 00 69 00 00 00 7F FF 04 00
+89:320 00:343 OCBP: BlessedFileDP - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-1>)/\<UUID-17>\System\Library\CoreServices\boot.efi
+89:899 00:579 OCBP: Blessed file is valid
+90:242 00:342 OCBP: 18 filesystems for APFS - Success
+90:590 00:347 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-15>, 16)
+90:939 00:349 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+91:288 00:348 OCBP: APFS match container <UUID-16> vs <UUID-16> for 2 of 18 - 1
+91:688 00:400 OCBP: Missing partition <UUID-15> on preboot - Not Found
+92:041 00:352 OCBP: No APFS booter 2 of 18 for <UUID-15> - Not Found
+92:393 00:351 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-17>, 64)
+92:735 00:342 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+93:081 00:345 OCBP: APFS match container <UUID-16> vs <UUID-16> for 3 of 18 - 1
+93:425 00:344 OCBP: Found partition <UUID-17> on preboot
+93:780 00:354 OCBP: Want predefined list for APFS 16 at <UUID-17>
+94:136 00:355 OCBP: Predefined <UUID-17> \System\Library\CoreServices\boot.efi was found
+94:481 00:345 OCBP: Found APFS booter 3 of 18 for <UUID-17> (67E3DC90)
+94:829 00:348 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-18>, 4)
+95:178 00:348 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+95:534 00:355 OCBP: APFS match container <UUID-16> vs <UUID-16> for 4 of 18 - 1
+95:873 00:339 OCBP: Missing partition <UUID-18> on preboot - Not Found
+96:230 00:356 OCBP: No APFS booter 4 of 18 for <UUID-18> - Not Found
+96:578 00:348 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-19>, 1)
+96:919 00:340 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+97:337 00:417 OCBP: APFS match container <UUID-16> vs <UUID-16> for 5 of 18 - 1
+97:677 00:340 OCBP: Missing partition <UUID-19> on preboot - Not Found
+98:030 00:352 OCBP: No APFS booter 5 of 18 for <UUID-19> - Not Found
+98:384 00:353 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-20>, 8)
+98:722 00:338 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+99:127 00:405 OCBP: APFS match container <UUID-16> vs <UUID-16> for 6 of 18 - 1
+99:485 00:357 OCBP: Missing partition <UUID-20> on preboot - Not Found
+99:827 00:341 OCBP: No APFS booter 6 of 18 for <UUID-20> - Not Found
+100:202 00:375 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-21>, 192)
+100:576 00:373 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+100:926 00:349 OCBP: APFS match container <UUID-16> vs <UUID-16> for 7 of 18 - 1
+101:270 00:344 OCBP: Missing partition <UUID-21> on preboot - Not Found
+101:617 00:346 OCBP: No APFS booter 7 of 18 for <UUID-21> - Not Found
+101:957 00:340 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-22>, 16)
+102:361 00:403 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+102:696 00:334 OCBP: APFS match container <UUID-23> vs <UUID-16> for 9 of 18 - 0
+103:035 00:339 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-33>, 64)
+103:381 00:345 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+103:721 00:340 OCBP: APFS match container <UUID-23> vs <UUID-16> for 10 of 18 - 0
+104:096 00:374 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-25>, 4)
+104:436 00:340 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+104:776 00:339 OCBP: APFS match container <UUID-23> vs <UUID-16> for 11 of 18 - 0
+105:116 00:340 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-34>, 1)
+105:504 00:388 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+105:846 00:341 OCBP: APFS match container <UUID-23> vs <UUID-16> for 12 of 18 - 0
+106:189 00:343 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-26>, 192)
+106:532 00:343 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+106:886 00:353 OCBP: APFS match container <UUID-23> vs <UUID-16> for 13 of 18 - 0
+107:227 00:340 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-35>, 8)
+107:564 00:337 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-23>)
+107:907 00:343 OCBP: APFS match container <UUID-23> vs <UUID-16> for 14 of 18 - 0
+108:263 00:355 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-36>, 192)
+108:620 00:356 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-37>)
+108:962 00:342 OCBP: APFS match container <UUID-37> vs <UUID-16> for 17 of 18 - 0
+109:356 00:394 OCBP: APFS Volume Info - 7A4CF398 (131072, <UUID-38>, 0)
+109:697 00:341 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-37>)
+110:039 00:341 OCBP: APFS match container <UUID-37> vs <UUID-16> for 18 of 18 - 0
+110:382 00:343 OCBP: APFS bless for <UUID-16>:<null string> is Success
+110:722 00:340 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-1>)/\<UUID-17>\System\Library\CoreServices\boot.efi
+111:306 00:584 OCB: Get visibility for boot entry <UUID-17>\ - Not Found
+111:657 00:351 OCB: Registering entry Macintosh SSD [Apple15:Apple] (T:2|F:0|G:0|E:0|B:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-1>)/\<UUID-17>\System\Library\CoreServices\boot.efi
+112:235 00:577 LNX: APFS - not scanning
+112:576 00:340 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-2>)
+112:911 00:334 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-17>, 64)
+113:253 00:342 OCBP: APFS Container Info - 7A4CF018 (1, <UUID-16>)
+113:613 00:360 LNX: APFS - not scanning
+113:962 00:349 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-3>)
+114:304 00:341 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-18>, 4)
+114:647 00:343 OCBP: APFS Container Info - 7A4CF398 (1, <UUID-16>)
+115:002 00:354 LNX: APFS - not scanning
+115:351 00:349 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-4>)
+115:697 00:345 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-19>, 1)
+116:092 00:395 OCBP: APFS Container Info - 7A4CF098 (1, <UUID-16>)
+116:445 00:352 LNX: APFS - not scanning
+116:795 00:350 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-5>)
+117:140 00:344 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-20>, 8)
+117:483 00:343 OCBP: APFS Container Info - 7A4CF318 (1, <UUID-16>)
+117:824 00:340 LNX: APFS - not scanning
+118:167 00:343 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(2,GPT,<UUID-9>,0x12C06,0x3514C2E)/VenMedia(<UUID-10>,<GUID32-6>)
+118:518 00:351 OCBP: APFS Volume Info - 7A4CF498 (131072, <UUID-21>, 192)
+118:870 00:351 OCBP: APFS Container Info - 7A4CF298 (1, <UUID-16>)
+119:219 00:348 LNX: APFS - not scanning
+119:579 00:360 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(3,GPT,<UUID-11>,0x3527834,0x5174D6)
+119:934 00:355 OCBP: BlessedFileHEX (1/3 166) - 02 01 0C 00 D0 41 03 0A 00 00 00 00 01 01 06 00 00 1B 01 01 06 00 00 00 03 16 10 00 01 00 00 00 00 25 38 90 A8 54 86 21 04 01 2A 00 03 00 00 00 34 78 52 03 00 00 00 00 D6 74 51 00 00 00 00 00
+120:283 00:348 OCBP: BlessedFileHEX (2/3 166) - A1 94 85 23 5C 13 48 40 95 F8 23 4F 97 A7 C8 6C 02 02 04 04 50 00 5C 00 53 00 79 00 73 00 74 00 65 00 6D 00 5C 00 4C 00 69 00 62 00 72 00 61 00 72 00 79 00 5C 00 43 00 6F 00 72 00 65 00 53 00
+120:627 00:344 OCBP: BlessedFileHEX (3/3 166) - 65 00 72 00 76 00 69 00 63 00 65 00 73 00 5C 00 62 00 6F 00 6F 00 74 00 2E 00 65 00 66 00 69 00 00 00 7F FF 04 00
+120:983 00:355 OCBP: BlessedFileDP - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(3,GPT,<UUID-11>,0x3527834,0x5174D6)/\System\Library\CoreServices\boot.efi
+121:331 00:348 OCBP: Blessed file is valid
+121:684 00:352 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(3,GPT,<UUID-11>,0x3527834,0x5174D6)/\System\Library\CoreServices\boot.efi
+122:032 00:347 OCB: Get visibility for boot entry <null string> - Not Found
+122:388 00:356 OCB: Registering entry Install macOS Tahoe [Apple26:Apple] (T:2|F:0|G:0|E:0|B:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(3,GPT,<UUID-11>,0x3527834,0x5174D6)/\System\Library\CoreServices\boot.efi
+122:733 00:345 LNX: HFS - not scanning
+123:091 00:357 LNX: APFS - not scanning
+123:438 00:346 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-12>)
+123:798 00:359 OCBP: APFS Volume Info - 6AF29718 (131072, <UUID-33>, 64)
+124:149 00:351 OCBP: APFS Container Info - 6AF29E98 (1, <UUID-23>)
+124:509 00:359 LNX: APFS - not scanning
+124:866 00:356 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-9>)
+125:210 00:344 OCBP: APFS Volume Info - 6AF29718 (131072, <UUID-25>, 4)
+125:565 00:354 OCBP: APFS Container Info - 6AF29798 (1, <UUID-23>)
+125:911 00:346 LNX: APFS - not scanning
+127:550 01:639 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-13>)
+130:663 03:113 OCBP: APFS Volume Info - 6AF29718 (131072, <UUID-34>, 1)
+132:173 01:509 OCBP: APFS Container Info - 6AF29818 (1, <UUID-23>)
+134:937 02:764 LNX: APFS - not scanning
+136:329 01:391 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-10>)
+137:733 01:403 OCBP: APFS Volume Info - 6AF29718 (131072, <UUID-26>, 192)
+139:167 01:433 OCBP: APFS Container Info - 6AF29898 (1, <UUID-23>)
+140:583 01:416 LNX: APFS - not scanning
+141:980 01:396 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-14>)
+143:400 01:419 OCBP: APFS Volume Info - 6AF29718 (131072, <UUID-35>, 8)
+144:762 01:361 OCBP: APFS Container Info - 6AF29B98 (1, <UUID-23>)
+146:158 01:395 LNX: APFS - not scanning
+147:598 01:440 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(5,GPT,<UUID-13>,0x7041FEB,0x430E24)
+149:012 01:414 OCBP: BlessedFileHEX (1/3 166) - 02 01 0C 00 D0 41 03 0A 00 00 00 00 01 01 06 00 00 1B 01 01 06 00 00 00 03 16 10 00 01 00 00 00 00 25 38 90 A8 54 86 21 04 01 2A 00 05 00 00 00 EB 1F 04 07 00 00 00 00 24 0E 43 00 00 00 00 00
+150:422 01:409 OCBP: BlessedFileHEX (2/3 166) - 95 4A EB 14 8F 1D 12 49 A6 40 06 B0 B6 F2 55 72 02 02 04 04 50 00 5C 00 53 00 79 00 73 00 74 00 65 00 6D 00 5C 00 4C 00 69 00 62 00 72 00 61 00 72 00 79 00 5C 00 43 00 6F 00 72 00 65 00 53 00
+151:830 01:407 OCBP: BlessedFileHEX (3/3 166) - 65 00 72 00 76 00 69 00 63 00 65 00 73 00 5C 00 62 00 6F 00 6F 00 74 00 2E 00 65 00 66 00 69 00 00 00 7F FF 04 00
+153:257 01:426 OCBP: BlessedFileDP - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(5,GPT,<UUID-13>,0x7041FEB,0x430E24)/\System\Library\CoreServices\boot.efi
+154:673 01:416 OCBP: Blessed file is valid
+155:910 01:237 OCB: Adding entry type (T:2|F:0|G:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(5,GPT,<UUID-13>,0x7041FEB,0x430E24)/\System\Library\CoreServices\boot.efi
+156:246 00:336 OCB: Get visibility for boot entry <null string> - Not Found
+156:600 00:353 OCB: Registering entry Install macOS Sequoia [Apple15:Apple] (T:2|F:0|G:0|E:0|B:0) - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(5,GPT,<UUID-13>,0x7041FEB,0x430E24)/\System\Library\CoreServices\boot.efi
+156:951 00:350 LNX: HFS - not scanning
+157:331 00:380 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(1,GPT,<UUID-31>,0x28,0x64000)
+157:685 00:353 OCBP: Blessed file is missing
+158:039 00:353 OCBP: Blessed folder is missing
+158:379 00:340 OCBP: Predefined <nil> \System\Library\CoreServices\boot.efi is missing - Not Found
+158:719 00:339 OCBP: Predefined <nil> \EFI\Microsoft\Boot\bootmgfw.efi is missing - Not Found
+159:065 00:346 OCBP: Predefined <nil> \EFI\BOOT\BOOTX64.EFI is missing - Not Found
+159:403 00:338 LNX: TypeGUID: <UUID-14> (ESP) PARTUUID: <UUID-31>
+159:750 00:346 LNX: ScanLoaderEntries \ - Not Found
+160:095 00:345 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(2,GPT,<UUID-32>,0x64028,0x7234FB0)/VenMedia(<UUID-10>,<GUID32-15>)
+160:440 00:345 OCBP: APFS Volume Info - 6AEB9198 (131072, <UUID-36>, 192)
+160:786 00:345 OCBP: APFS Container Info - 6AEB9218 (1, <UUID-37>)
+161:126 00:340 LNX: APFS - not scanning
+161:462 00:336 OCB: Adding bless entry on disk - PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)/USB(0x2,0x0)/HD(2,GPT,<UUID-32>,0x64028,0x7234FB0)/VenMedia(<UUID-10>,<GUID32-16>)
+161:802 00:339 OCBP: APFS Volume Info - 6AEB9198 (131072, <UUID-38>, 0)
+162:142 00:340 OCBP: APFS Container Info - 6AEB9298 (1, <UUID-37>)
+162:507 00:364 LNX: APFS - not scanning
+162:850 00:343 OCB: Not adding hidden auxiliary entry BootKicker.efi (tool|B:0) -> BootKicker.efi
+163:258 00:407 OCB: Not adding hidden auxiliary entry OpenShell.efi (tool|B:0) -> OpenShell.efi
+163:610 00:352 BEP: Reset NVRAM entry, preserve boot 0, apple 0
+163:953 00:342 OCB: Not adding hidden auxiliary entry Reset NVRAM (os|B:1) -> <null string>
+164:293 00:339 OCB: Showing menu... (polling hotkeys)
+164:633 00:340 OCHK: InitHotKeys
+164:971 00:337 OCKM: Allocated key repeat context 6AEB9018 6AEB9318 6AF29398
+165:313 00:341 OCAE: Set screen resolution to 5120x2880 - Success
+165:654 00:340 OCTY: Registered handler
+166:001 00:347 OCAE: Set screen resolution to 5120x2880 - Success
+166:343 00:341 OCUI: Console attributes: 0
+166:461 00:118 OCUI: UseDiskLabel: 0, UseGenericLabel: 0
+166:583 00:122 OCB: Get volume icon for Macintosh SSD <UUID-17>\ - Not Found
+166:697 00:113 OCUI: Trying flavour icon Resources\Image\Acidanthera\GoldenGate\Apple15.icns
+166:836 00:139 OCUI: Using flavour icon, custom: 1
+166:952 00:115 OCUI: Console attributes: 0
+167:081 00:129 OCUI: UseDiskLabel: 0, UseGenericLabel: 0
+167:214 00:133 OCB: Get volume icon for Install macOS Tahoe <null string> - Success
+167:332 00:117 OCUI: Console attributes: 0
+167:460 00:127 OCUI: UseDiskLabel: 0, UseGenericLabel: 0
+167:579 00:119 OCB: Get volume icon for Apple SSD <UUID-33>\ - Not Found
+167:699 00:119 OCUI: Trying flavour icon Resources\Image\Acidanthera\GoldenGate\Apple26.icns
+167:813 00:114 OCUI: Trying flavour icon Resources\Image\Acidanthera\GoldenGate\Apple.icns
+167:939 00:125 OCUI: Console attributes: 0
+168:059 00:120 OCUI: UseDiskLabel: 0, UseGenericLabel: 0
+168:189 00:129 OCB: Get volume icon for Install macOS Sequoia <null string> - Success
+181:562 13:372 OCHK: FreeHotKeys
+181:920 00:358 OCTY: Unregistered handler
+182:271 00:350 OCKM: Freeing key repeat context 6AEB9018 6AEB9318 6AF29398
+182:626 00:355 OCB: Should boot from 3. Apple SSD (T:2|F:0|G:0|E:0|DEF:0)
+182:964 00:337 OCB: Saved mode 0/0/0 - Success
+183:294 00:330 OCB: Perform boot Apple SSD to dp PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi (0/0)
+183:910 00:616 OCABC: EfiBootRt candidate - PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/<SASEX-1>/HD(4,GPT,<UUID-12>,0x3A46D0A,0x35FB2E1)/VenMedia(<UUID-10>,<GUID32-7>)/\<UUID-33>\System\Library\CoreServices\boot.efi
+184:492 00:581 OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+184:842 00:350 OCSB: Secure boot is disabled, skipping
+185:181 00:339 OCB: Arch filtering 6A137018(723512)->6A137018(723512) caps 0 - Success
+185:529 00:347 OCB: Matching <>/0[0] args on type 2
+185:874 00:344 OCABC: VMware Mac installed on 6AE31398 - Success
