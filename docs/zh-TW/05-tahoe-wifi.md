@@ -46,6 +46,12 @@ B 機沒有上述任何電源事件，沒有 `IOC_POWER` 失敗，`Wi-Fi Power: 
 | 在同一台機器開 Sequoia 15.8.1 | **一樣失敗。**當天記錄中 07:44 起的每一次 Sequoia 開機，都在開機後約 25 秒出現相同的 `IOC_POWER -1`，晶片欄位也是空的。機主也表示，這台機器的 Wi-Fi 在這次調查之前的日常使用中就已經時好時壞，當時以為是驅動不全。 |
 | 不經 OpenCore，原生開機進 macOS High Sierra 10.13 (build 17G66) 安裝程式並讀取網卡狀態（OpenCore 的 NVRAM 變數不存在，確認沒經過 OpenCore） | 原生的 `AirPort_BrcmNIC` 驅動**讀得到晶片**：`chipnum 0xaa52`、`chiprev 0x1`、`corerev 0x31`、`boardid 0x14a`、`boardrev 0x1114`，與 B 機相同。但核心訊息顯示射頻校準失敗、韌體反覆當機重啟：`wlc_phy_radio2069_afecal: SPINWAIT ERROR : AFECAL for core`、`wl0: fatal error, reinitializing, total count of reinit's[17`、`syncPowerState: WWEN[disabled]`。`TruePowerOff = Yes`，掃不到網路。 |
 
+### 原生 High Sierra：網卡的狀態
+
+在 High Sierra 安裝程式（沒有經過 OpenCore）終端機畫面的翻拍。第一行顯示 OpenCore 的 NVRAM 變數不存在；晶片與板子欄位讀得到；核心日誌出現 `AFECAL ... SPINWAIT ERROR` 與 `reinit's[17`。（指令列與 MAC 位址已遮蓋。）
+
+![A 機在 High Sierra 安裝程式（未經 OpenCore）的終端機：晶片與板子欄位存在、TruePowerOff = Yes，核心日誌顯示 AFECAL SPINWAIT ERROR 與韌體反覆重新初始化](../images/imac17-1-no1-native-high-sierra-wifi-state.jpg)
+
 ## 解讀（推論）
 
 - 在能用的那台機器上，OCLP 注入的驅動、root patch 放進系統的檔案、核心快取與 EFI 全都相同，而且故障在三個作業系統下重現，所以它不是 Tahoe 專屬，也不是 OCLP 無線補丁組合造成的。

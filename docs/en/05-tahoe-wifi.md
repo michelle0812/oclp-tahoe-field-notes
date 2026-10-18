@@ -46,6 +46,12 @@ Machine B shows none of the power events above, no `IOC_POWER` failure, `Wi-Fi P
 | Boot Sequoia 15.8.1 on the same machine | **Also fails.** Every Sequoia boot recorded in the log since 07:44 that day shows the same `IOC_POWER -1` about 25 s after boot, and the chip fields are empty. The owner also reports that this machine's Wi-Fi was already intermittent (sometimes working, sometimes not) in everyday use before this investigation, which at the time was put down to incomplete drivers. |
 | Boot the macOS High Sierra 10.13 (build 17G66) installer natively (no OpenCore: the OpenCore NVRAM variable does not exist) and read the card state | The native `AirPort_BrcmNIC` driver **does read the chip**: `chipnum 0xaa52`, `chiprev 0x1`, `corerev 0x31`, `boardid 0x14a`, `boardrev 0x1114`, identical to machine B. But the kernel log shows the radio failing its calibration and the firmware crashing and restarting repeatedly: `wlc_phy_radio2069_afecal: SPINWAIT ERROR : AFECAL for core`, `wl0: fatal error, reinitializing, total count of reinit's[17`, `syncPowerState: WWEN[disabled]`. `TruePowerOff = Yes`, no scan result. |
 
+### Native High Sierra: the card state
+
+A photo of the terminal in the High Sierra installer, booted without OpenCore. The first line shows the OpenCore NVRAM variable missing; the chip and board fields are readable; the kernel log shows `AFECAL ... SPINWAIT ERROR` and `reinit's[17`. (Command lines and the MAC address are masked.)
+
+![High Sierra installer terminal on machine A, booted without OpenCore: chip and board fields present, TruePowerOff = Yes, kernel log shows the AFECAL SPINWAIT ERROR and repeated firmware reinitialisation](../images/imac17-1-no1-native-high-sierra-wifi-state.jpg)
+
 ## Interpretation (inference)
 
 - The OCLP-injected driver, the root-patched files, the kernel collections and the EFI are all identical on the working machine, and the failure repeats under three operating systems, so it is not specific to Tahoe or to the OCLP wireless patch set.
