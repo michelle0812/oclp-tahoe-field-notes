@@ -51,7 +51,7 @@ Machine B shows none of the power events above, no `IOC_POWER` failure, `Wi-Fi P
 - The OCLP-injected driver, the root-patched files, the kernel collections and the EFI are all identical on the working machine, and the failure repeats under three operating systems, so it is not specific to Tahoe or to the OCLP wireless patch set.
 - The failure sequence looks like a power-management event the card cannot recover from: the driver object is created but never finishes initialising before the power policy puts the card into D3, after which it does not come back.
 - **Working explanation: a faulty Wi-Fi card on machine A.** Under the native High Sierra installer, with no OpenCore, no OCLP kext and no root patch, the stock driver finds the chip but the radio's analog front-end calibration fails (`AFECAL ... SPINWAIT ERROR`) and the firmware keeps crashing and restarting (`total count of reinit's[17`). That is independent of macOS version, EFI, drivers and patches, and it matches the owner's report that this machine's Wi-Fi had been intermittent long before any of these experiments. An unseated connector or a power-delivery fault on the board cannot be excluded without opening the machine.
-- The wired network on the same machine is unaffected.
+- The wired network on the same machine is unaffected, and so is Bluetooth: the owner uses an Apple Magic Mouse over Bluetooth on machine A. On this combo card Bluetooth is a separate USB function, which fits a fault confined to the Wi-Fi half.
 
 ## Reproduce the timeline
 
